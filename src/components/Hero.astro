@@ -1,13 +1,15 @@
 ---
-
+import { Image } from 'astro:assets'
 ---
 
 <div class='flex flex-col relative screen-height pb-20'>
-  <div class='flex justify-end w-full h-full pt-20'>
-    <img
+  <div class='flex justify-end w-full pt-20'>
+    <Image
+      width={320}
+      height={300}
       src='/foto-perfil.jpeg'
       alt='hero'
-      class='w-80 h-90 object-cover rounded-2xl'
+      class='object-cover rounded-2xl'
     />
   </div>
   <div class='absolute bottom-5 right-4 w-52 mb-10'>
