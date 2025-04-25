@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Geist-Light';
+  src: url('/fonts/Geist-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist-Regular';
+  src: url('/fonts/Geist-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist-Medium';
+  src: url('/fonts/Geist-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist-Bold';
+  src: url('/fonts/Geist-Bold.otf') format('truetype');
+}
