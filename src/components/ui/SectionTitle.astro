@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string
+  id: string
+}
+
+const { title, id } = Astro.props
+---
+
+<div
+  id={id}
+  class='inline-block p-[2px] rounded-full bg-gradient-to-r from-stone-900 to-stone-300 my-4'>
+  <h1 class='rounded-full px-4 py-2 bg-stone-100 text-stone-900 text-lg'>
+    {title}
+  </h1>
+</div>
