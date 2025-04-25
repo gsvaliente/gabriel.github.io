@@ -19,3 +19,7 @@
   font-family: 'Geist-Bold';
   src: url('/fonts/Geist-Bold.otf') format('truetype');
 }
+
+html {
+  scroll-behavior: smooth;
+}
