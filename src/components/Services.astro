@@ -1,0 +1,53 @@
+---
+import SectionTitle from './ui/SectionTitle.astro'
+import CardSection from './ui/CardSection.astro'
+---
+
+<section class='my-20'>
+  <SectionTitle
+    title='Services'
+    id='services'
+  />
+  <div class='mt-4 flex items-start flex-col md:flex-row justify-between'>
+    <div class='w-1/3'>
+      <p class='text-stone-900 font-semibold text-4xl mb-5'>
+        Comprehensive list of the services I offer
+      </p>
+      <p class='text-stone-500 font-regular text-2xl'>
+        Actively working on adding new technologies and trends to offer my
+        clients
+      </p>
+      <button
+        class='bg-stone-900 text-stone-200 px-4 py-3 mt-6 rounded-full border border-slate-900 hover:bg-slate-900 transition-all duration-300 cursor-pointer'
+        ><a href='#contact'>Let's Chat</a>
+      </button>
+    </div>
+    <div class='w-2/3 flex justify-end pr-2'>
+      <div class='grid grid-cols-2 gap-4'>
+        <CardSection
+          title='Web Development'
+          description='I offer a range of web development services, from simple static sites to complex web applications.'
+        />
+        <CardSection
+          title='UI/UX Design'
+          description='For me, it is essential to create a design that is not only functional but also aesthetically pleasing'
+        />
+        <CardSection
+          title='App Development'
+          description='Creating mobile and web applications using the latest technologies and trends'
+        />
+        <CardSection
+          title='CMS Support'
+          description='Content Management System (CMS) creating and support services, from serverless backend to Wordpress and Shopify'
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  p {
+    line-height: 1.2;
+    font-family: 'Geist-Light', sans-serif;
+  }
+</style>
