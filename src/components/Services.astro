@@ -1,9 +1,10 @@
 ---
 import SectionTitle from './ui/SectionTitle.astro'
 import CardSection from './ui/CardSection.astro'
+import { serviceArray } from '../consts/services'
 ---
 
-<section class='my-20'>
+<section class='mb-20'>
   <SectionTitle
     title='Services'
     id='services'
@@ -24,22 +25,14 @@ import CardSection from './ui/CardSection.astro'
     </div>
     <div class='w-2/3 flex justify-end pr-2'>
       <div class='grid grid-cols-2 gap-4'>
-        <CardSection
-          title='Web Development'
-          description='I offer a range of web development services, from simple static sites to complex web applications.'
-        />
-        <CardSection
-          title='UI/UX Design'
-          description='For me, it is essential to create a design that is not only functional but also aesthetically pleasing'
-        />
-        <CardSection
-          title='App Development'
-          description='Creating mobile and web applications using the latest technologies and trends'
-        />
-        <CardSection
-          title='CMS Support'
-          description='Content Management System (CMS) creating and support services, from serverless backend to Wordpress and Shopify'
-        />
+        {
+          serviceArray.map((service) => (
+            <CardSection
+              title={service.title}
+              description={service.description}
+            />
+          ))
+        }
       </div>
     </div>
   </div>
