@@ -1,0 +1,84 @@
+---
+import SectionTitle from './ui/SectionTitle.astro'
+---
+
+<section
+  class='mt-20 mb-10 bg-stone-900 -mx-[calc((100vw-theme(maxWidth.7xl))/2)] px-[calc((100vw-theme(maxWidth.7xl))/2)] py-10'>
+  <SectionTitle
+    title='Contact'
+    id='contact'
+  />
+  <main class='mt-4'>
+    <div class='flex items-baseline'>
+      <div class='w-2/3 text-7xl font-semibold text-stone-100 mb-10'>
+        <h1>Hey There,<br />Let's Connect</h1>
+      </div>
+    </div>
+    <form
+      action=''
+      class='flex flex-col items-center justify-center gap-4 w-1/2 mx-auto'>
+      <div class='flex flex-col w-full gap-2'>
+        <label
+          class='text-stone-100'
+          for='name'
+          >Name</label
+        >
+        <input
+          class='bg-stone-100 rounded-lg p-4 w-full'
+          type='text'
+          id='name'
+          name='name'
+          placeholder='John Doe'
+          required
+        />
+      </div>
+      <div class='flex flex-col w-full gap-2'>
+        <label
+          class='text-stone-100'
+          for='email'
+          >Email</label
+        >
+        <input
+          class='bg-stone-100 rounded-lg p-4 w-full'
+          type='email'
+          id='email'
+          name='email'
+          placeholder='your@email.com'
+          required
+        />
+      </div>
+      <div class='flex flex-col w-full gap-2'>
+        <label
+          class='text-stone-100'
+          for='message'
+          >Message</label
+        >
+        <textarea
+          class='bg-stone-100 rounded-lg p-4 w-full resize-none'
+          id='message'
+          name='message'
+          placeholder='Hey, I just wanted to say...'
+          required
+        ></textarea>
+      </div>
+      <button
+        class='bg-stone-400 rounded-lg p-4 w-full mt-2 font-semibold text-stone-900 uppercase hover:bg-stone-500 transition-all duration-300 cursor-pointer'
+        type='submit'
+        >Send</button
+      >
+    </form>
+  </main>
+</section>
+
+<style>
+  h1 {
+    font-family: 'Geist-Light', sans-serif;
+    line-height: 1.2;
+  }
+  p {
+    font-family: 'Geist-Light', sans-serif;
+  }
+  label {
+    font-family: 'Geist-Regular', sans-serif;
+  }
+</style>
