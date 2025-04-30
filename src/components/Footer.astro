@@ -1,0 +1,84 @@
+---
+import { Icon } from '@astrojs/starlight/components'
+---
+
+<footer
+  class='bg-stone-900 -mx-[calc((100vw-theme(maxWidth.7xl))/2)] px-[calc((100vw-theme(maxWidth.7xl))/2)] text-stone-100'>
+  <div class='flex flex-row justify-between'>
+    <div class='flex flex-col gap-3 w-1/2'>
+      <h1 class='text-stone-100 font-bold text-3xl'>Gabriel.</h1>
+      <p class='text-stone-400'>
+        I'm a software engineer with<br /> a passion for building web<br /> and mobile
+        applications.
+      </p>
+      <div class='flex flex-row gap-5 text-stone-100'>
+        <a
+          href='https://github.com/gabrielvaliente'
+          class='hover:text-stone-400'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <Icon
+            name='github'
+            size='1.5rem'
+          />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/gabrielvaliente/'
+          class='hover:text-stone-400'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <Icon
+            name='linkedin'
+            size='1.5rem'
+          />
+        </a>
+        <a
+          href='https://www.instagram.com/gabrielvaliente/'
+          class='hover:text-stone-400'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <Icon
+            name='instagram'
+            size='1.5rem'
+          />
+        </a>
+      </div>
+    </div>
+    <div class='flex gap-2 w-1/2 justify-between'>
+      <div>
+        <h2 class='text-stone-100'>Based</h2>
+        <p class='text-stone-400'>Barcelona, Spain</p>
+      </div>
+      <div>
+        <h2 class='font-bold text-stone-100'>Email</h2>
+        <p class='text-stone-400'>gsvalient@gmail.com</p>
+      </div>
+      <div>
+        <h2 class='font-bold text-stone-100'>Phone</h2>
+        <p class='text-stone-400'>+34 666 666 666</p>
+      </div>
+    </div>
+  </div>
+  <hr class='border-stone-400 mt-10' />
+  <div class='container mx-auto px-4 py-8 text-stone-700'>
+    <p class='text-center'>
+      &copy; 2025 Gabriel Valiente. All rights reserved.
+    </p>
+    <p class='text-center'>Created and Powered by AstroJs</p>
+  </div>
+</footer>
+
+<style>
+  h1 {
+    font-family: 'Geist-Light', sans-serif;
+  }
+  h2 {
+    font-family: 'Geist-Bold', sans-serif;
+  }
+  p {
+    font-family: 'Geist-Light', sans-serif;
+  }
+  a {
+    font-family: 'Geist-Light', sans-serif;
+  }
+</style>
