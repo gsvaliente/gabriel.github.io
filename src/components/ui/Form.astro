@@ -1,0 +1,53 @@
+<form
+  action=''
+  class='flex flex-col items-center justify-center gap-4 w-1/2 mx-auto'>
+  <div class='flex flex-col w-full gap-2'>
+    <label
+      class='text-stone-100'
+      for='name'
+      >Name</label
+    >
+    <input
+      class='bg-stone-100 rounded-lg p-4 w-full'
+      type='text'
+      id='name'
+      name='name'
+      placeholder='John Doe'
+      required
+    />
+  </div>
+  <div class='flex flex-col w-full gap-2'>
+    <label
+      class='text-stone-100'
+      for='email'
+      >Email</label
+    >
+    <input
+      class='bg-stone-100 rounded-lg p-4 w-full'
+      type='email'
+      id='email'
+      name='email'
+      placeholder='your@email.com'
+      required
+    />
+  </div>
+  <div class='flex flex-col w-full gap-2'>
+    <label
+      class='text-stone-100'
+      for='message'
+      >Message</label
+    >
+    <textarea
+      class='bg-stone-100 rounded-lg p-4 w-full resize-none'
+      id='message'
+      name='message'
+      placeholder='Hey, I just wanted to say...'
+      required
+    ></textarea>
+  </div>
+  <button
+    class='bg-stone-400 rounded-lg p-4 w-full mt-2 font-semibold text-stone-900 uppercase hover:bg-stone-500 transition-all duration-300 cursor-pointer'
+    type='submit'
+    >Send</button
+  >
+</form>
